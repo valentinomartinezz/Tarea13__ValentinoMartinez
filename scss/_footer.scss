@@ -1,0 +1,22 @@
+/* -------------------------FOOTER------------------------------------ */
+footer{
+    background-color: $principal;
+    .footer__links{
+        padding: 25px;  
+        display: inline-block;
+        color: rgb(109, 109, 109);
+        font-weight: bold;
+        text-decoration: none;
+    }
+    #arriba{
+        width: auto;
+        height: 10px;
+        margin-bottom: 0;
+    }
+    #contacto{
+        width: auto;
+        height: 10px;
+        margin-bottom: 0;
+        font-weight: bolder;
+    }
+}
