@@ -6,7 +6,7 @@ main.home__mainContainer {
         padding: 10px;
         position: relative;
         font-size: 30px;
-        font-weight: bolder;
+        font-weight: map-get($estilos, font-weight);
     }
     section.destinosPopu{
     background: linear-gradient(to  bottom, black, rgb(44, 44, 44));
@@ -19,10 +19,9 @@ main.home__mainContainer {
             right: -830px;
             bottom: 15px;
             color: $colorTexto;
-            font-weight: bolder;
+            font-weight: map-get($estilos, font-weight);
             font-size: 20px;
         }
-
         .ranking{
             background-color: beige;
             width: 175px;
@@ -36,15 +35,14 @@ main.home__mainContainer {
             right: -660px;
             border-radius: 10%;
             font-size: 25px;
-            font-weight: bolder;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.534);
+            font-weight: map-get($estilos, font-weight);
+            box-shadow: map-get($estilos, box-shadow);
             animation: left-in;
             animation-duration: 3s;
         }
         #disney{
             background-image: url('../fotos/disney.jpg');
-            background-size: cover;
-            background-position: center;
+            @include centrarImgFondo;
             color: $colorTexto_img;
             transition: all 1s;
             &:hover{
@@ -52,28 +50,13 @@ main.home__mainContainer {
                 z-index: 10;
             }
         }
-
         #londres{
+            @extend #disney ;
             background-image: url('../fotos/Londres.jpg');
-            background-size: cover;
-            background-position: center;
-            color: $colorTexto_img;
-            transition: all 1s;
-            &:hover{
-                transform: scale(1.2);
-                z-index: 10;
-            }
         }
-
         #paris{
+            @extend #disney ;
             background-image: url('../fotos/paris.jpg');
-            background-size: cover;
-            background-position: center;
-            transition: all 1s;
-            &:hover{
-                transform: scale(1.2);
-                z-index: 10;    
-            }
         }
     }
 }

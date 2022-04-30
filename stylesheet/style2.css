@@ -23,7 +23,7 @@ a {
 
 /* ---------------------HEADER-------------------------------------- */
 header div.header__titulo {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.534);
   width: 100%;
   height: 500px;
   background-color: transparent;
@@ -92,32 +92,19 @@ main.home__mainContainer section.destinosPopu {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.534);
     animation: left-in;
     animation-duration: 3s; }
-  main.home__mainContainer section.destinosPopu #disney {
+  main.home__mainContainer section.destinosPopu #disney, main.home__mainContainer section.destinosPopu #londres, main.home__mainContainer section.destinosPopu #paris {
     background-image: url("../fotos/disney.jpg");
     background-size: cover;
     background-position: center;
     color: #bac4cc;
     transition: all 1s; }
-    main.home__mainContainer section.destinosPopu #disney:hover {
+    main.home__mainContainer section.destinosPopu #disney:hover, main.home__mainContainer section.destinosPopu #londres:hover, main.home__mainContainer section.destinosPopu #paris:hover {
       transform: scale(1.2);
       z-index: 10; }
   main.home__mainContainer section.destinosPopu #londres {
-    background-image: url("../fotos/Londres.jpg");
-    background-size: cover;
-    background-position: center;
-    color: #bac4cc;
-    transition: all 1s; }
-    main.home__mainContainer section.destinosPopu #londres:hover {
-      transform: scale(1.2);
-      z-index: 10; }
+    background-image: url("../fotos/Londres.jpg"); }
   main.home__mainContainer section.destinosPopu #paris {
-    background-image: url("../fotos/paris.jpg");
-    background-size: cover;
-    background-position: center;
-    transition: all 1s; }
-    main.home__mainContainer section.destinosPopu #paris:hover {
-      transform: scale(1.2);
-      z-index: 10; }
+    background-image: url("../fotos/paris.jpg"); }
 
 /* -------------------------FOOTER------------------------------------ */
 footer {
